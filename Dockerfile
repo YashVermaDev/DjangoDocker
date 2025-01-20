@@ -3,6 +3,7 @@ FROM python:3.10-slim
 
 # Set the working directory
 WORKDIR /app
+ENV GIT_DISCOVERY_ACROSS_FILESYSTEM 1
 
 # Copy requirements.txt into the container
 COPY requirements.txt .
